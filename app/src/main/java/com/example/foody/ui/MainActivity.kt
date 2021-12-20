@@ -1,14 +1,14 @@
-package com.example.foody
+package com.example.foody.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.foody.R
 import com.example.foody.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        setTheme(R.style.AppTheme)
+        //setTheme(R.style.AppTheme)
         setContentView(binding.root)
 
         val navHostFragment =
