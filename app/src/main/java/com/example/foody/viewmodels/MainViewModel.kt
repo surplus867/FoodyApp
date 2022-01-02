@@ -4,6 +4,7 @@ import android.app.Application
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
+import android.util.Log
 import androidx.lifecycle.*
 import com.example.foody.data.Repository
 import com.example.foody.data.database.RecipesEntity
@@ -67,12 +68,12 @@ class MainViewModel @Inject constructor(
         if (hasInternetConnection()) {
             try {
                 val response = repository.remote.searchRecipes(searchQuery)
-                recipesResponse.value = handleFoodRecipesResponse(response)
+                searchedRecipesResponse.value = handleFoodRecipesResponse(response)
             } catch (e: Exception) {
-                recipesResponse.value = NetworkResult.Error("Recipes not found.")
+                searchedRecipesResponse.value = NetworkResult.Error("Recipes not found.")
             }
         } else {
-            recipesResponse.value = NetworkResult.Error("No Internet Connection.")
+            searchedRecipesResponse.value = NetworkResult.Error("No Internet Connection.")
         }
     }
 
@@ -87,6 +88,7 @@ class MainViewModel @Inject constructor(
                 return NetworkResult.Error("Timeout")
             }
             response.code() == 402 -> {
+                // reached max requests
                 return NetworkResult.Error("API Key Limited")
             }
             response.body()!!.results.isNullOrEmpty() -> {
