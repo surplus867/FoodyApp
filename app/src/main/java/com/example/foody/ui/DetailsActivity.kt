@@ -101,7 +101,7 @@ class DetailsActivity : AppCompatActivity() {
                         recipeSaved = true
                     }
                 }
-            } catch (e :Exception) {
+            } catch (e : Exception) {
                 Log.d("DetailsActivity", e.message.toString())
             }
         })
