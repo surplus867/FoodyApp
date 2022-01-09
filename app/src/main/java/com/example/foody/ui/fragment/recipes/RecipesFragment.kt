@@ -3,7 +3,6 @@ package com.example.foody.ui.fragment.recipes
 import android.os.Bundle
 import android.util.Log
 import android.view.*
-import android.view.View.inflate
 import androidx.fragment.app.Fragment
 import android.widget.Toast
 import androidx.appcompat.widget.SearchView
@@ -14,7 +13,7 @@ import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.foody.R
 import com.example.foody.viewmodels.MainViewModel
-import com.example.foody.adapter.RecipesAdapter
+import com.example.foody.adapters.RecipesAdapter
 import com.example.foody.databinding.FragmentRecipesBinding
 import com.example.foody.util.NetworkListener
 import com.example.foody.util.NetworkResult
@@ -24,7 +23,6 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
-import java.util.zip.Inflater
 
 @ExperimentalCoroutinesApi
 @AndroidEntryPoint
