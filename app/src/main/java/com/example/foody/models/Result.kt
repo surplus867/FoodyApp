@@ -11,29 +11,29 @@ import kotlinx.parcelize.RawValue
 @Parcelize
 data class Result(
     @SerializedName("aggregateLikes")
-    val aggregateLikes: Int,
+    val aggregateLikes: Int? = null,
     @SerializedName("cheap")
-    val cheap: Boolean,
+    val cheap: Boolean? = null,
     @SerializedName("dairyFree")
     val dairyFree: Boolean,
     @SerializedName("extendedIngredients")
-    val extendedIngredients: @RawValue List<ExtendedIngredient>,
+    val extendedIngredients: @RawValue List<ExtendedIngredient>? = null,
     @SerializedName("glutenFree")
     val glutenFree: Boolean,
     @SerializedName("id")
-    val resultId: Int,
+    val resultId: Int? = null,
     @SerializedName("image")
-    val image: String,
+    val image: String? = null,
     @SerializedName("readyInMinutes")
-    val readyInMinutes: Int,
+    val readyInMinutes: Int? = null,
     @SerializedName("sourceName")
-    val sourceName: String?,
+    val sourceName: String? = null,
     @SerializedName("sourceUrl")
-    val sourceUrl: String,
+    val sourceUrl: String? = null,
     @SerializedName("summary")
-    val summary: String,
+    val summary: String? = null,
     @SerializedName("title")
-    val title: String,
+    val title: String? = null,
     @SerializedName("vegan")
     val vegan: Boolean,
     @SerializedName("vegetarian")

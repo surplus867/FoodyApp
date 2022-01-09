@@ -28,8 +28,10 @@ class InstructionsFragment : Fragment() {
         val myBundle: Result? = args?.getParcelable(Constants.RECIPE_RESULT_KEY)
 
         binding.instructionsWebView.webViewClient = object: WebViewClient() {}
-        val websiteUrl: String = myBundle!!.sourceUrl
-        binding.instructionsWebView.loadUrl(websiteUrl)
+        val websiteUrl: String? = myBundle!!.sourceUrl
+        if (websiteUrl != null) {
+            binding.instructionsWebView.loadUrl(websiteUrl)
+        }
 
         return binding.root
     }

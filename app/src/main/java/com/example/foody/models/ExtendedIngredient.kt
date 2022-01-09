@@ -10,13 +10,13 @@ data class ExtendedIngredient(
     @SerializedName("amount")
     val amount: Double,
     @SerializedName("consistency")
-    val consistency: String,
+    val consistency: String? = null,
     @SerializedName("image")
-    val image: String,
+    val image: String? = null,
     @SerializedName("name")
-    val name: String,
+    val name: String? = null,
     @SerializedName("original")
-    val original: String,
+    val original: String? = null,
     @SerializedName("unit")
-    val unit: String
+    val unit: String? = null,
 ): Parcelable
