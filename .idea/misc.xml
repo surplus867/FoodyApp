@@ -5,7 +5,11 @@
       <map>
         <entry key="app/src/main/res/drawable/gradient_overlay.xml" value="0.3138888888888889" />
         <entry key="app/src/main/res/drawable/ic_menu_book.xml" value="0.2574074074074074" />
+        <entry key="app/src/main/res/drawable/ic_spash_screen_light.xml" value="0.26614583333333336" />
+        <entry key="app/src/main/res/drawable/ic_splash_screen.xml" value="0.26614583333333336" />
+        <entry key="app/src/main/res/drawable/ic_splash_screen_light.xml" value="0.26614583333333336" />
         <entry key="app/src/main/res/drawable/ic_star.xml" value="0.2574074074074074" />
+        <entry key="app/src/main/res/layout-night/fragment_food_joke.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_detail.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
         <entry key="app/src/main/res/layout/favorite_recipes_row_layout.xml" value="0.3098958333333333" />
@@ -25,6 +29,7 @@
         <entry key="app/src/main/res/menu/details_menu.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/menu/favorite_recipes_menu.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/menu/favorites_contextual_menu.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/menu/food_joke_menu.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/menu/recipes_menu.xml" value="0.25104166666666666" />
       </map>
     </option>
