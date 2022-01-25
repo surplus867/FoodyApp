@@ -20,13 +20,13 @@ class NetworkListener: ConnectivityManager.NetworkCallback() {
 
         val network =
             connectivityManager.activeNetwork
-        if(network == null){
+        if (network == null) {
             isNetworkAvailable.value = false
             return isNetworkAvailable
         }
 
         val networkCapabilities = connectivityManager.getNetworkCapabilities(network)
-        if(networkCapabilities == null) {
+        if (networkCapabilities == null) {
             isNetworkAvailable.value = false
              return isNetworkAvailable
         }
