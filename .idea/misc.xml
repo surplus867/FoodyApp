@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/gradient_overlay.xml" value="0.3138888888888889" />
+        <entry key="app/src/main/res/drawable/ic_launcher2_foreground.xml" value="0.2712962962962963" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.18385416666666668" />
         <entry key="app/src/main/res/drawable/ic_menu_book.xml" value="0.2574074074074074" />
         <entry key="app/src/main/res/drawable/ic_spash_screen_light.xml" value="0.26614583333333336" />
         <entry key="app/src/main/res/drawable/ic_splash_screen.xml" value="0.26614583333333336" />
@@ -31,6 +33,8 @@
         <entry key="app/src/main/res/menu/favorites_contextual_menu.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/menu/food_joke_menu.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/menu/recipes_menu.xml" value="0.25104166666666666" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2712962962962963" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.18385416666666668" />
       </map>
     </option>
   </component>
