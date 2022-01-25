@@ -63,7 +63,7 @@ class RecipesFragment : Fragment(), SearchView.OnQueryTextListener {
         })
 
 
-        lifecycleScope.launch {
+        lifecycleScope.launchWhenStarted {
             networkListener = NetworkListener()
             networkListener.checkNetworkAvailability(requireContext())
                 .collect { status ->
@@ -73,7 +73,6 @@ class RecipesFragment : Fragment(), SearchView.OnQueryTextListener {
                     readDatabase()
                 }
         }
-
 
         binding.recipesFab.setOnClickListener {
             if (recipesViewModel.networkStatus) {
